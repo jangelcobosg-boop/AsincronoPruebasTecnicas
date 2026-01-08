@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.background__food {
+    background-color: rgb(24, 23, 23);
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 0.5s ease-in-out;
+    
+
+
+
+    & .background__info{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
+        color: antiquewhite;
+        width: 100%;
+        
+        gap: 2rem;
+        padding: 2rem;
+
+        & h2 {
+            font-size: 3rem;
+        }
+
+        & span {
+            font-size: .75rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+.burguerBackground {
+
+background-color: url('../assets/Burguer.webp');
+background-repeat: no-repeat;
+background-size: cover;
+width: 100vh;
+height: 100vh;
+
+}
+
+.wings {
+
+}
+
+.wraps {
+
+}
+
+.hotDogs {
+
+}
+
+.Pizzas {
+
+}
+
+.sandwiches {
+
+}
+
+.fries {
+
+}
+
+.drinks {
+
+}
+
+.extras {
+
+}
+
+.desserts {
+}
