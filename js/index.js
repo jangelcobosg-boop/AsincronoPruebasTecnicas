@@ -38,3 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = imgUrl; 
     });
 });
+
+
+import { defineUnlighthouseConfig } from 'unlighthouse/config'
+
+export default defineUnlighthouseConfig({
+  site: 'https://jangelcobosgPruebasTecnicas.com',
+  scanner: {
+    samples: 3,
+    throttle: true,
+  },
+})
