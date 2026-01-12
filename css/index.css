@@ -10,6 +10,18 @@ body {
     font-style: normal;
 }
 
+.header__foodmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
 
 .background__food {
     background-color: rgb(24, 23, 23);
@@ -27,6 +39,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
+    
     color: antiquewhite;
     width: 100%;
     gap: 2rem;
