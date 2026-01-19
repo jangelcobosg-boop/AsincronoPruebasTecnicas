@@ -10,18 +10,6 @@ body {
     font-style: normal;
 }
 
-.header__foodmenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-h1 {
-    text-align: center;
-    margin: 2rem;
-    font-size: 2.5rem;
-    color: #333;
-}
 
 .background__food {
     background-color: rgb(24, 23, 23);
@@ -30,7 +18,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-
+   
     transition: background 0.6s ease-in; 
     background-repeat: no-repeat;
 }
@@ -39,7 +27,6 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
-    
     color: antiquewhite;
     width: 100%;
     gap: 2rem;
@@ -47,28 +34,31 @@ h1 {
     cursor: pointer;
     z-index: 2; 
 
-}
-  .background__info_items:hover  {
+       
+        &:hover .background__info_items {
             opacity: 0.3;
         }
 
         
- .background__info_items {
+        & .background__info_items {
             transition: opacity 0.3s ease, transform 0.3s ease;
             cursor: pointer;
- }
-           
 
+            &:hover {
+                opacity: 1;
+                transform: translateX(10px); 
+            }
+        }
 
-     h2 {
+        & h2 {
             font-size: 3rem;
         }
 
-     span {
+        & span {
             font-size: .75rem;
             text-transform: uppercase;
         }
-
+    }
 
 
 
